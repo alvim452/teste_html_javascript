@@ -1,0 +1,16 @@
+@charset "UTF-8"
+/* ESTE ARQUIVO CONTEMFORMATAÇÃO CSS ESPECIFICA PARA O ARQUIVO: SPECS.HTML*/
+section#conteudo{
+    width: 1000px;
+    margin: auto;
+    background-color: cornsilk;
+}
+iframe#frame-specs{
+    width: 330px;
+    height: 280px;
+    border:none ;/* removeu a borda do iframe*/
+    overflow: hidden; /* evita que a rolagem aconteça*/
+}
+iframe#frame-specs::-webkit-scrollbar{
+    display: none;
+}

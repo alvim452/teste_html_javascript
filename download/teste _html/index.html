@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste01_html</title>
+    <link rel="stylesheet" href="estilo.css">
+    
+    
+</head>
+<h1></h1>
+
+<body class="container" onload="iniciaSlider()">
+  
+    <header>
+        
+    </header>
+    <section>
+        <header>
+            <h2>Teste para criar objecto</h2>
+        </header>
+        <div id="div1">
+
+           <form class="form" action="mailto:rochaamcl@net.sapo.pt" method="POST">
+              <fieldset id="usuario"><legend>Identificação do Utilizador</legend>
+              <label for="nome">Nome: &nbsp;</label> 
+              <input type="text" name="Nome" id="nome" size="20" maxlength="40" placeholder="1ºNome">  *<br>
+
+              <label for="apelido">Apelido:</label> 
+               <input type="text" name="Apelido" id="apelido"placeholder="Ultimo nome">  * <br>
+
+              <label for="idade"> Idade:</label> 
+              <input type="number" min="1" step="1" name="Idade" id="idade" maxlength="3" size="3"><br> 
+
+              <label for="sexo"> Género: </label> 
+               Masculino: <input type="radio" name="Sexo" id="tmasc" checked value="Masculino" onclick="func()">
+               Feminino: <input type="radio" name="Sexo" id="tfem" value="Feminino" onclick="func()"><br>
+              </fieldset>
+
+              <fieldset id="endereço"><legend>Morada</legend>
+              <label for="localidade">Localidade:</label> 
+              <input type="text" name="Localidade" id="localidade"><br>
+
+               <label for="cidade">Cidade:</label> 
+                <input type="text" name="Cidade" id="cidade"> <br>
+
+               <label for="codigoPostal">Código Postal:</label> 
+               <input type="number" name="Cp1" id="txtcp1" size="4" maxlength="4">
+                - <input type="number" name="Cp2" id="txtcp2" size="3" maxlength="3"><br>
+               </fieldset> 
+
+              <fieldset id="correio_electrónico"><legend>Correio Electrónico</legend>
+              <label for="email">E-mail:</label>  <input type="email" name="E-mail" id="email" required> *<br>
+              <label for="password"> Password:</label>
+                <input type="password" name="Password" id="password" required> *<br>
+              </fieldset> 
+
+                <!---- <button class="btn" type="submit">Submeter</button>----->
+                <input type="button" value="Submeter" onclick="submeter()"><br>
+
+            </form>
+        </div>
+
+        <div id="div2">
+          <form class="form" action="">
+
+          <div class="form-group">
+            <label for="data">Data</label>
+            <input type="date" name="" id="data" class="form-control" required autofocus>
+          </div>
+
+          <div class="form-group">
+            <label for="quantidade">Quantidade</label>
+            <input type="number" min="1" step="1" value="1" name="" id="quantidade" class="form-control" required autofocus>
+          </div>
+
+          <div class="form-group">
+            <label for="valor">valor</label>
+            <input type="number" min="0.01" step="0.01" value="0.0" name="" id="valor" class="form-control">
+          </div>
+
+          <button class="btn btn primary" type="submit">Incluir</button>
+          <br>
+          <br>
+
+          </form>
+
+        
+
+        <div class="text-center">
+          <button class="btn btn-primary text-center" type="button">
+          Importar Negociações  
+          </button>
+          <button class="btn btn-primary text-center" type="button">
+          Apagar 
+          </button>
+        </div>
+        <br>
+      
+
+        <table class="table table-hover table bordered">
+        <thead>
+          <tr>
+            <td>DATA</td>
+            <td>QUANTIDADE</td>
+            <td>VALOR</td>
+            <td>VOLUME</td>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+
+        <tfoot>
+        </tfoot>
+        </table>
+        
+        </div>
+
+        <div id="moldura">
+          <input type="button" value="Anterior" onclick="ant()">
+          <input type="button" value="Próximo" onclick="prox()">
+        </div>
+
+
+        <div id="res">
+
+          <header id="cabeçalho">
+            <hgroup>
+            <h1> Menu <br>&nbsp; Interactivo</h1><br>
+            <h2>Foto Interactiva</h2>
+            </hgroup>
+            <img id="icone" src="_imagens/car3.jpg" alt="">
+         
+          
+          <nav id="menu">
+          <h1>Menu Principal</h1>
+          <ul>
+            <li onmouseover = "mudaFoto(`_imagens/menu.jpg`)" onmouseout = "mudaFoto(`_imagens/car3.jpg`)"><a href="index.html"> Home</a></li>
+            <li onmouseover = "mudaFoto(`_imagens/contactos.jpg`)" onmouseout = "mudaFoto(`_imagens/car3.jpg`)"><a href="contactos.html"> Contactos</a></li>
+            <li onmouseover="mudaFoto(`_imagens/fotos.jpg`)" onmouseout="mudaFoto(`_imagens/car3.jpg`)"><a href="fotos.html"> Fotos</a></li>
+            <li onmouseover="mudaFoto(`_imagens/musica.jpg`)" onmouseout="mudaFoto(`_imagens/car3.jpg`)"><a href="musica.html"> Musica</a></li>
+            <li onmouseover="mudaFoto(`_imagens/filmes.jpg`)" onmouseout="mudaFoto(`_imagens/car3.jpg`)"><a href="filmes.html"> Filmes</a></li>
+            <li onmouseover="mudaFoto(`_imagens/house.jpg`)" onmouseout="mudaFoto(`_imagens/car3.jpg`)"><a href="specs.html"> Especificações</a></li>
+          </ul>
+        </nav> 
+      </header>
+
+        </div>
+
+    </section>
+
+    <aside id="lateral">
+
+    </aside>
+  </body>
+  
+<div id="footer">
+    <footer id="rodape">
+        <h3>Copyright &copy;  by Álvaro Rocha, Setembro de 2020.</h3>
+         <a href="https://www.facebook.com/alvaro.rocha.3572/" target="blanck">Facebook
+        </a> - <a href="https://github.com/alvim452?tab" target="blanck">GitHub</a>|
+    </footer>
+</div>    
+
+ <script src="script.js"></script>
+</html>

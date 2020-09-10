@@ -1,0 +1,183 @@
+body{
+    background-color: rgb(129, 147, 149);
+    text-align: center;
+    
+}
+header{
+    color: rgb(95, 105, 105);
+    font-style: normal;
+    text-align: center
+}
+section{
+    width: 650px;
+    height: 90%;
+    background-color: lightslategray;
+    margin-left: 50px; 
+    border-radius: 20pt;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.900);
+    color: rgba(0, 0, 0, 0.900);
+    font: arial;
+    padding: 5px;
+    float: left;
+    border-right: 1px solid #606060;
+    
+}
+aside#lateral{
+display: block;
+width: 650px;
+height: 1680px;
+float: right;
+background-color: #5e6881;
+border-radius: 20pt;
+margin-right: 30px;
+box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.900);
+
+}
+
+
+#div1{
+    width: 500px;
+    height: 350px;
+    background-color: rgb(135, 168, 222);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 65px;
+    position: relative;
+    border-radius: 20pt;
+    padding: 10pt;
+    box-shadow:5px 5px 15px rgb(154, 233, 200);
+     
+}
+fieldset#endereço input label{
+    display: block;
+    align-items: flex-end;
+}
+
+#div2{
+    width: 350px;
+    height: 220px;
+    background-color: cornflowerblue;
+    margin-left: 130px;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 20pt;
+    padding: 16pt;
+    box-shadow:5px 5px 5px black;
+
+}
+#moldura{
+    width: 600px;
+    height: 450px;
+    background-color: #eeeeee;
+    margin-left: 15px;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 20pt;
+    transition: background-image 2s;
+    border: 8px solid rgb(76, 88, 83);
+}
+#footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(176, 172, 224);
+    font: italic 5pt;
+    text-align: center;
+    clear: both;
+    border-top: 5px solid #645f5f;
+    margin-top: 10px;
+    
+}
+div#footer{
+    width: 95%;
+    margin: auto;
+    margin-left: 50px;
+    border-radius: 20px;
+}
+
+
+table, th, td{
+border: 1px solid rgba(17, 15, 41, 0.794);
+border-spacing: 0px;
+
+}
+ fieldset{
+    border: 1px solid rgb(73, 93, 160);
+    border-radius: 20pt;
+    margin: 5px;
+}
+#res{
+    width: 600px;
+    height: 400px;
+    background-color: rgb(55, 57, 58);
+    position: relative;
+    border-radius: 10pt;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom:25px ;
+    color: floralwhite;
+    font: arial normal;
+    border:8px solid cornsilk;
+    
+}
+img#icone{
+    position: absolute;
+    left: 18px;
+    top: 30px;
+}
+
+header#cabeçalho{
+    border-bottom: 2px #606060 solid;
+    height: 150px;
+    background: url("_imagens/menu2.jpg")no-repeat 460px 2px ;
+    
+}
+
+header#cabeçalho h1{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 30pt;
+color: #606060;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.600);
+padding: 0px;
+margin-bottom: 0px;
+}
+
+header#cabeçalho h2{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 15pt; 
+color: #888888;
+padding: 0px;
+margin-top: 0px;
+}
+
+nav#menu li{
+    display: inline-block;
+    padding: 5px;
+    margin: 10px;
+    transition:background-color 1s;
+
+
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: 170px;
+    left: 5px;
+
+}
+nav#menu h1{
+    display: none;
+}
+nav#menu li:hover{
+    background-color: #606060;
+
+}
+nav#menu a{
+   color: #000000; 
+   text-decoration: none;
+}
+nav#menu a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+
+}
